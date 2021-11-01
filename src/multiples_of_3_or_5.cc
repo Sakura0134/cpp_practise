@@ -11,8 +11,10 @@ int main(int argc, char **argv){
 
 
 	for (int i = 3; i < max_limit; i += 3){
-		if (j < max_limit && j%3 != 0){
-			sum += j;
+		if (j < max_limit){
+			if (j%15 != 0){
+				sum += j;
+			}
 			j += 5;
 		}	
 		sum += i;
